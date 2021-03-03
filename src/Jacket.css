@@ -1,0 +1,11 @@
+.container {
+  border: 2px solid black;
+  width: 200px;
+  background-color: darkkhaki;
+}
+button {
+  display: flex;
+  width: 75px;
+  justify-content: center;
+  margin: 10px;
+}

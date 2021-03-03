@@ -1,0 +1,11 @@
+.pant {
+  border: 2px solid black;
+  width: 200px;
+  background-color: cornflowerblue;
+}
+button {
+  display: flex;
+  width: 75px;
+  justify-content: center;
+  margin: 10px;
+}

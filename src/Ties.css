@@ -1,0 +1,15 @@
+.tie {
+  border: 2px solid black;
+  width: 200px;
+  background-color: aqua;
+}
+button {
+  display: flex;
+  width: 75px;
+  justify-content: center;
+  margin: 10px;
+  margin-left: 60px;
+}
+h1 {
+  text-align: center;
+}
