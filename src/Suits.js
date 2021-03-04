@@ -26,10 +26,16 @@ class Suits extends Component {
       count: (this.state.count = 0),
     });
   }
+  componentDidUpdate() {
+    document.getElementById("sui").innerHTML = "Suit inventory";
+  }
+  componentDidMount() {
+    document.getElementById("sui").innerHTML = "Suit";
+  }
   render() {
     return (
       <div className="suit">
-        <h1> suit</h1>
+        <h1 id="sui"> suit</h1>
         <h1>{this.state.count}</h1>
         <button onClick={this.add}>
           <h1>+</h1>

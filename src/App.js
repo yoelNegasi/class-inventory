@@ -9,10 +9,10 @@ function App() {
     <div>
       <h1> Inventory</h1>
       <div className="overall">
-        <Jacket startingCount={88} />
+        <Jacket startingCount={2} />
         <Pants startingCount={12} />
         <Suits start={22} />
-        <Ties start={22} />
+        <Ties start={22} year={12} />
       </div>
     </div>
   );

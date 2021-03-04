@@ -27,11 +27,18 @@ class Jacket extends Component {
       count: (this.state.count = 0),
     });
   }
+  componentDidUpdate() {
+    document.getElementById("jac").innerHTML = "Jacket inventory";
+  }
+  componentDidMount() {
+    document.getElementById("jac").innerHTML = "Jacket ";
+  }
+
   render() {
     return (
       <div className="container">
-        <h1>jacket</h1>
-        <h1>{this.state.count}</h1>
+        <h1 id="jac">jacket</h1>
+        <h1> {this.state.count}</h1>
         <button onClick={this.add}>
           <h1> +</h1>
         </button>

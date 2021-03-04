@@ -27,11 +27,17 @@ class Pants extends Component {
       count: (this.state.count = 0),
     });
   }
+  componentDidUpdate() {
+    document.getElementById("pan").innerHTML = "Pants inventory";
+  }
+  componentDidMount() {
+    document.getElementById("pan").innerHTML = "Pants";
+  }
 
   render() {
     return (
       <div className="pant">
-        <h1>Pants</h1>
+        <h1 id="pan">Pants</h1>
         <h1>{this.state.count}</h1>
         <button onClick={this.add}>
           <h1> +</h1>

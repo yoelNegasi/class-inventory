@@ -26,11 +26,17 @@ class Ties extends Component {
       count: (this.state.count = 0),
     });
   }
+  componentDidUpdate() {
+    document.getElementById("tie").innerHTML = "Tie inventory";
+  }
+  componentDidMount() {
+    document.getElementById("tie").innerHTML = "Tie";
+  }
 
   render() {
     return (
       <div className="tie">
-        <h1>ties</h1>
+        <h1 id="tie">ties</h1>
         <h1>{this.state.count}</h1>
         <button onClick={this.adding}>
           <h1>+</h1>
