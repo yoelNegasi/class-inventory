@@ -12,7 +12,7 @@ function App() {
         <Jacket startingCount={2} />
         <Pants startingCount={12} />
         <Suits start={22} />
-        <Ties start={22} year={12} />
+        <Ties start={22} />
       </div>
     </div>
   );
